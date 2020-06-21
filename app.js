@@ -38,11 +38,11 @@ app.post("/", function(req,res) {
     };
     const jsonData = JSON.stringify(data);
     
-    const url = "https://us10.api.mailchimp.com/3.0/lists/e6a5b0100d";
+    const url = "https://us10.api.mailchimp.com/3.0/lists/<listid>";
     
     const options = {
         method: "POST",
-        auth: "eshita19:a76c9754c2da1a9ed0cf55cb62518d58-us10"
+        auth: "<anystring>:<apikey>"
     }
     
     
@@ -79,5 +79,3 @@ app.listen(process.env.PORT || 3000 , function() {
 });
 
 
-//a76c9754c2da1a9ed0cf55cb62518d58-us10
-//e6a5b0100d
